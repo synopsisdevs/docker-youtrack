@@ -1,4 +1,4 @@
-FROM iron/java
+FROM java:8-jdk
 
 MAINTAINER developers@synopsis.cz
 
@@ -6,7 +6,7 @@ WORKDIR /opt/youtrack
 
 ADD log4j.xml /opt/youtrack/bin/
 
-ENV YOUTRACK_VERSION 6.5.16853
+ENV YOUTRACK_VERSION 6.5.17105
 
 RUN mkdir -p /youtrack /opt/youtrack/data /opt/youtrack/backup /opt/youtrack/bin
 
